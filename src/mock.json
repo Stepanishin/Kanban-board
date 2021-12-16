@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1, 
+        "title": "Clean the room", 
+        "status": "Backlog",
+        "description": "task 1" 
+    },
+    {
+        "id": 2, 
+        "title": "Put the waste", 
+        "status": "Backlog",
+        "description": "task 2" 
+    },
+    {
+        "id": 3, 
+        "title": "eat the dog", 
+        "status": "Ready",
+        "description": "task 3" 
+    },
+    {
+        "id": 4, 
+        "title": "eat the cat", 
+        "status": "Backlog",
+        "description": "task 4" 
+    }
+]

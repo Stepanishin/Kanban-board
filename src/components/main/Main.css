@@ -1,0 +1,153 @@
+.Main {
+    height: 590px;
+    background-color: #0079BF;
+    padding: 10px 19px;
+}
+
+.TusksContainers__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.TusksContainers__List {
+    background-color: #EBECF0;
+    border-radius: 10px;
+    width: 282px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    padding: 12px 12px;
+}
+
+.TusksContainers__Card {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.TusksContainers__Card-item {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 7px 8px;
+    word-break:break-all;
+}
+
+.TusksContainers__Card-item:hover {
+    background-color: #0079BF;
+}
+
+.TusksContainers__form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.PlaceholderAdd {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    /* display: none; */
+}
+
+.ButtonAdd {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #5E6C84;
+    text-align: center;
+    width: 102px;
+    height: 29px;
+    border-radius: 5px;
+}
+
+.ButtonAdd:hover {
+    background-color: #fff; 
+}
+
+.ButtonSubmit {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #5E6C84;
+    text-align: center;
+    /* display: none; */
+    width: 102px;
+    height: 29px;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.ButtonSubmit:hover {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #fff;
+    background: #0079BF;
+}
+
+.DropDownReady,
+.DropDownInProgress,
+.DropDownFinished {
+    display: none;
+}
+
+.DropDownReady li:hover,
+.DropDownInProgress li:hover,
+.DropDownFinished li:hover {
+     background-color: #fff;
+     cursor: pointer;
+}
+
+button:disabled,
+button:disabled:hover {
+    background-color: red;
+}
+
+.TaskDetail__wrap {
+    background-color: #fff;
+    height: 100%;
+    padding: 20px;
+}
+
+.TaskDetail__container-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.TaskDetail__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 21px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.TaskDetail__description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 21px;
+    color: #000000;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}

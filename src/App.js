@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { useState } from 'react';
+import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
+import Main from './components/main/Main';
+import './reset.css'
+import './style.css'
+import { BrowserRouter } from 'react-router-dom'
+
 
 function App() {
+  const initialState = JSON.parse(window.localStorage.getItem('tasks')) || []
+
+  const [tasks, setTasks] = useState(initialState)
+
+  useEffect (() => {
+    window.localStorage.setItem('tasks', JSON.stringify(tasks))
+  }, [tasks])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Main tasks={tasks} setTasks={setTasks} />
+        <Footer tasks={tasks} />
+      </div>
+    </BrowserRouter>  
+
   );
 }
 
